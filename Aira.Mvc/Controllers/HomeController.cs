@@ -1,16 +1,19 @@
 using Aira.Mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Aira.Mvc.Extensions;
 
 namespace Aira.Mvc.Controllers
 {
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
+		private readonly IHttpClientFactory _httpClientFactory;
 
-		public HomeController(ILogger<HomeController> logger)
+		public HomeController(ILogger<HomeController> logger, IHttpClientFactory httpClientFactory)
 		{
 			_logger = logger;
+			_httpClientFactory = httpClientFactory;
 		}
 
 		public IActionResult Index()
@@ -18,8 +21,15 @@ namespace Aira.Mvc.Controllers
 			return View();
 		}
 
-		public IActionResult Privacy()
+		public async Task<IActionResult> Privacy()
 		{
+			var apiClient = _httpClientFactory.CreateClient(HttpFactoryClients.AiraApi.ToString());
+			var response = await apiClient.GetAsync("WeatherForecast");
+			var model = await response.ReadContentAsync<List<WeatherForecast>>();
+
+
+
+
 			return View();
 		}
 
