@@ -6,3 +6,4 @@
 
 global using Aira.Api.Middleware;
 global using Microsoft.OpenApi.Models;
+global using Microsoft.AspNetCore.Mvc;

@@ -19,3 +19,4 @@ global using Aira.Domain.Common;
 global using Aira.Domain.Common.Interfaces;
 global using Aira.Infrastructure.Contexts;
 global using Microsoft.EntityFrameworkCore.Diagnostics;
+global using Aira.Domain.Entities;

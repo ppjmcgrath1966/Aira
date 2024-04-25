@@ -24,4 +24,8 @@
     <ProjectReference Include="..\Aira.Infrastructure\Aira.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+  </ItemGroup>
+
 </Project>

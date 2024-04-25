@@ -9,15 +9,16 @@ public class ApplicationDbContext(
 	private readonly IUser _user = user ?? throw new ArgumentNullException(nameof(user));
 	private readonly IDomainEventDispatcher _dispatcher = dispatcher ?? throw new ArgumentNullException(nameof(dispatcher));
 
-	#region DbSets
+    #region DbSets
 
+    public DbSet<Continent> Continent { get; set; }
+    public DbSet<Country> Country { get; set; }
 
+    #endregion DbSets
 
-	#endregion DbSets
+    #region Overrides
 
-	#region Overrides
-
-	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 	{
 		if (Debugger.IsAttached)
 		{
@@ -27,8 +28,12 @@ public class ApplicationDbContext(
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
+        modelBuilder.Entity<Continent>()
+            .HasMany(c => c.Countries)
+            .WithOne(e => e.Continent)
+            .IsRequired();
 
-		base.OnModelCreating(modelBuilder);
+        base.OnModelCreating(modelBuilder);
 	}
 
 	public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

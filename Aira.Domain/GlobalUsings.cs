@@ -8,3 +8,4 @@ global using MediatR;
 global using Aira.Domain.Common.Interfaces;
 global using System.ComponentModel.DataAnnotations.Schema;
 global using System.ComponentModel.DataAnnotations;
+global using Aira.Domain.Common;

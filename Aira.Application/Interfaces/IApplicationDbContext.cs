@@ -9,8 +9,10 @@ public interface IApplicationDbContext
 
 	EntityEntry Entry(object entity);
 
-	#region DbSets
+    #region DbSets
 
+    public DbSet<Continent> Continent { get; set; }
+    public DbSet<Country> Country { get; set; }
 
-	#endregion DbSets
+    #endregion DbSets
 }
