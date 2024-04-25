@@ -4,8 +4,7 @@
 // See <a href="https://endjin.com/blog/2021/09/dotnet-csharp-10-implicit-global-using-directives">Global Usings</a>.
 // </summary>
 
-global using Aira.Mvc.Enums;
-global using System.Text.Json;
-global using System.Security.Claims;
-global using Aira.Application.Interfaces;
-global using Aira.Mvc.Services;
+global using MediatR;
+global using Aira.Domain.Common.Interfaces;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.ComponentModel.DataAnnotations;
