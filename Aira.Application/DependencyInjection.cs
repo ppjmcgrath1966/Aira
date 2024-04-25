@@ -5,6 +5,7 @@ public static class DependencyInjection
 	public static void AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
 	{
 		services.AddMediator();
+		services.AddHangfire(configuration);
 		services.AddMultiLingualSupport();
 	}
 
@@ -16,6 +17,17 @@ public static class DependencyInjection
 	}
 
 	#endregion MediatR
+
+	#region Hangfire
+
+	private static void AddHangfire(this IServiceCollection services, IConfiguration configuration)
+	{
+		services.AddHangfire(x => x.UseSqlServerStorage(configuration.GetConnectionString("DefaultConnection")));
+		services.AddHangfireServer();
+	}
+
+
+	#endregion Hangfire
 
 	#region Multi Lingual Support
 

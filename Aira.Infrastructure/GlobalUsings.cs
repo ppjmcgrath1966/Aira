@@ -6,3 +6,16 @@
 
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.AspNetCore.Identity;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.ComponentModel.DataAnnotations;
+global using Aira.Infrastructure.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Logging;
+global using System.Diagnostics;
+global using Aira.Application.Interfaces;
+global using Aira.Domain.Common;
+global using Aira.Domain.Common.Interfaces;
+global using Aira.Infrastructure.Contexts;
+global using Microsoft.EntityFrameworkCore.Diagnostics;

@@ -9,3 +9,6 @@ global using System.Text.Json;
 global using System.Security.Claims;
 global using Aira.Application.Interfaces;
 global using Aira.Mvc.Services;
+global using Aira.Application;
+global using Aira.Infrastructure;
+global using Aira.Mvc;
