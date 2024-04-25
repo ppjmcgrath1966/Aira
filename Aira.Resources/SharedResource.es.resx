@@ -120,4 +120,13 @@
   <data name="APPLICATION_TITLE" xml:space="preserve">
     <value>AIRA</value>
   </data>
+  <data name="CODE" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
 </root>

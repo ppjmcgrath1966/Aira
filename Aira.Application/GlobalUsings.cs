@@ -18,3 +18,5 @@ global using Microsoft.EntityFrameworkCore.Infrastructure;
 global using Microsoft.EntityFrameworkCore;
 global using Hangfire;
 global using Aira.Domain.Entities;
+global using Aira.Application.Abstractions;
+global using System.ComponentModel.DataAnnotations;

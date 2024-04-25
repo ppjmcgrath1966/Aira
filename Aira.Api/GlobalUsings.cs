@@ -7,3 +7,5 @@
 global using Aira.Api.Middleware;
 global using Microsoft.OpenApi.Models;
 global using Microsoft.AspNetCore.Mvc;
+global using MediatR;
+global using Aira.Api.Abstractions;
