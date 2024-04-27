@@ -58,23 +58,25 @@ public class LoginModel : PageModel
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
-        [Required]
+        [Required(ErrorMessage = "VALIDATION_FIELD_REQUIRED")]
         [EmailAddress]
+        [Display(Name = "USER_NAME")]
         public string Email { get; set; }
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
-        [Required]
+        [Required(ErrorMessage = "VALIDATION_FIELD_REQUIRED")]
         [DataType(DataType.Password)]
+        [Display(Name = "PASSWORD")]
         public string Password { get; set; }
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
-        [Display(Name = "Remember me?")]
+        [Display(Name = "REMEMBER_ME")]
         public bool RememberMe { get; set; }
     }
 

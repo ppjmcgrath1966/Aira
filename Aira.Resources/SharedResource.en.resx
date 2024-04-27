@@ -117,16 +117,82 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ADMIN" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="ADMIN_SETTINGS" xml:space="preserve">
+    <value>Admin Settings</value>
+  </data>
+  <data name="ALERT_SUCCESS_DELETE" xml:space="preserve">
+    <value>The record has been deleted successfully !</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="ALERT_SUCCESS_INSERT" xml:space="preserve">
+    <value>The record has been added successfully !</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="ALERT_SUCCESS_UPDATE" xml:space="preserve">
+    <value>The record has been updated successfully !</value>
+    <comment>Alert</comment>
+  </data>
   <data name="APPLICATION_TITLE" xml:space="preserve">
     <value>AIRA</value>
+  </data>
+  <data name="AUDITS" xml:space="preserve">
+    <value>Audits</value>
+  </data>
+  <data name="CLOSE" xml:space="preserve">
+    <value>Close</value>
   </data>
   <data name="CODE" xml:space="preserve">
     <value>Code</value>
   </data>
+  <data name="DASHBOARDS" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="DESIGNED_DEVELOPED" xml:space="preserve">
+    <value>Designed &amp; Developed by AIRA</value>
+  </data>
+  <data name="FORGOT_PASSWORD" xml:space="preserve">
+    <value>Forgot password?</value>
+  </data>
   <data name="LANGUAGE" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LOOKUP_DATA" xml:space="preserve">
+    <value>Lookup Data</value>
+  </data>
   <data name="NAME" xml:space="preserve">
     <value>Name</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="REMEMBER_ME" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="REPORTS" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="SIGN_IN" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="SIGN_IN_CONTINUE" xml:space="preserve">
+    <value>Sign in to continue to AIRA.</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="USER_NAME" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="VALIDATION_FIELD_REQUIRED" xml:space="preserve">
+    <value>This field is required !</value>
+  </data>
+  <data name="WELCOME_BACK" xml:space="preserve">
+    <value>Welcome Back !</value>
   </data>
 </root>

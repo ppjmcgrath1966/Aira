@@ -14,7 +14,8 @@ public static class DependencyInjection
 	private static void AddMediator(this IServiceCollection services)
 	{
 		services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-	}
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
+    }
 
 	#endregion MediatR
 

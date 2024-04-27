@@ -2,11 +2,11 @@
 
 public class ApplicationDbContext(
 	DbContextOptions<ApplicationDbContext> options,
-	IUser user,
+	ICurrentUserService user,
 	IDomainEventDispatcher dispatcher)
 	: IdentityDbContext<ApplicationUser>(options), IApplicationDbContext
 {
-	private readonly IUser _user = user ?? throw new ArgumentNullException(nameof(user));
+	private readonly ICurrentUserService _user = user ?? throw new ArgumentNullException(nameof(user));
 	private readonly IDomainEventDispatcher _dispatcher = dispatcher ?? throw new ArgumentNullException(nameof(dispatcher));
 
     #region DbSets

@@ -20,3 +20,6 @@ global using Aira.Domain.Common.Interfaces;
 global using Aira.Infrastructure.Contexts;
 global using Microsoft.EntityFrameworkCore.Diagnostics;
 global using Aira.Domain.Entities;
+global using Microsoft.AspNetCore.Http;
+global using System.Security.Claims;
+global using Aira.Infrastructure.Services;

@@ -13,10 +13,25 @@ builder.Services.AddHttpClient(nameof(HttpFactoryClients.AiraApi), httpClient =>
 	httpClient.DefaultRequestHeaders.Add("XApiKey", builder.Configuration.GetValue<string>("XApiKey"));
 });
 
+builder.Services.AddNotyf(o =>
+{
+    o.DurationInSeconds = 10;
+    o.IsDismissable = true;
+    o.HasRippleEffect = true;
+});
+
 
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+var supportedCultures = new[] { "en", "es", "pt", "pl" };
+var localizationOptions = new RequestLocalizationOptions()
+	.SetDefaultCulture(supportedCultures[0])
+	.AddSupportedCultures(supportedCultures)
+	.AddSupportedUICultures(supportedCultures);
+
+app.UseRequestLocalization(localizationOptions);
 
 if (!app.Environment.IsDevelopment())
 {
@@ -24,6 +39,7 @@ if (!app.Environment.IsDevelopment())
 	app.UseHsts();
 }
 
+app.UseNotyf();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

@@ -20,11 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Behaviours\" />
-    <Folder Include="Constants\" />
     <Folder Include="Features\Continent\Commands\" />
     <Folder Include="Features\Continent\Events\" />
-    <Folder Include="Features\Continent\Queries\" />
   </ItemGroup>
 
 </Project>

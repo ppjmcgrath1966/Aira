@@ -9,3 +9,7 @@ global using Microsoft.OpenApi.Models;
 global using Microsoft.AspNetCore.Mvc;
 global using MediatR;
 global using Aira.Api.Abstractions;
+global using Aira.Application.Features.Continent.DTOs;
+global using Aira.Application.Features.Continent.Queries;
+global using Aira.Application.Constants;
+global using Aira.Application.Wrappers;

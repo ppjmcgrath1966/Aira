@@ -4,7 +4,9 @@ public static class DependencyInjection
 {
 	public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
 	{
-		services.AddDbContext(configuration);
+        services.AddHttpContextAccessor();
+        services.AddScoped<ICurrentUserService, CurrentUserService>();
+        services.AddDbContext(configuration);
 		services.AddCaching();
 		services.AddDomainEvents();
 	}

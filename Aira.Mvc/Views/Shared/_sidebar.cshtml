@@ -1,0 +1,138 @@
+﻿<!-- ========== App Menu ========== -->
+<div class="app-menu navbar-menu">
+    <!-- LOGO -->
+    <div class="navbar-brand-box">
+        <!-- Dark Logo-->
+        <a href="@Url.Action("Index", "Home")" class="logo logo-dark">
+            <span class="logo-sm">
+                <img src="~/assets/images/logo-sm.png" alt="" height="22">
+            </span>
+            <span class="logo-lg">
+                <img src="~/assets/images/logo-dark.png" alt="" height="17">
+            </span>
+        </a>
+        <!-- Light Logo-->
+        <a href="@Url.Action("Index", "Home")" class="logo logo-light">
+            <span class="logo-sm">
+                <img src="~/assets/images/logo-sm.png" alt="" height="22">
+            </span>
+            <span class="logo-lg">
+                <img src="~/assets/images/logo-light.png" alt="" height="17">
+            </span>
+        </a>
+        <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+            <i class="ri-record-circle-line"></i>
+        </button>
+    </div>
+
+    <div id="scrollbar">
+        <div class="container-fluid">
+
+            <div id="two-column-menu">
+            </div>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li class="menu-title"><span data-key="t-menu">@Localizer.GetLocalizedString("MENU")</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">@Localizer.GetLocalizedString("DASHBOARDS")</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarDashboards">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="@Url.Action("CRM", "DashboardAudit")" class="nav-link"> @Localizer.GetLocalizedString("AUDITS") </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index", "DashboardReport")" class="nav-link"> @Localizer.GetLocalizedString("REPORTS") </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> <!-- end Dashboard Menu -->
+
+                <li class="menu-title"><i class="ri-more-fill"></i> <span>@Localizer.GetLocalizedString("ADMIN")</span></li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarAdmin" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarAdmin">
+                        <i class=" ri-file-user-line"></i> <span>@Localizer.GetLocalizedString("ADMIN_SETTINGS")</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarAdmin">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index", "User", new { area = "Admin"})" class="nav-link"> @Localizer.GetLocalizedString("USERS") </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index", "Role", new { area = "Admin"})" class="nav-link" id="sidebarAdmin_Roles"> @Localizer.GetLocalizedString("ROLES") </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarLookupData" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarLookupData">
+                        <i class="ri-record-circle-line"></i> <span>@Localizer.GetLocalizedString("LOOKUP_DATA")</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarLookupData">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index", "Continent", new { area = "LookupData"})" class="nav-link"> @Localizer.GetLocalizedString("CONTINENTS") </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index", "Country", new { area = "LookupData"})" class="nav-link"> @Localizer.GetLocalizedString("COUNTRIES") </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-title"><i class="ri-more-fill"></i> <span>@Localizer.GetLocalizedString("COMPONENTS")</span></li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarUI" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarUI">
+                        <i class="ri-pencil-ruler-2-line"></i> <span data-key="t-base-ui">Audits</span>
+                    </a>
+                    <div class="collapse menu-dropdown mega-dropdown-menu" id="sidebarUI">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Alerts", "BaseUI")" class="nav-link" data-key="t-alerts">Alerts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Badges", "BaseUI")" class="nav-link" data-key="t-badges">Badges</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                        <i class="ri-stack-line"></i> <span data-key="t-advance-ui">Reports</span>
+
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="@Url.Action("SweetAlerts", "AdvanceUI")" class="nav-link" data-key="t-sweet-alerts">Sweet Alerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("NestableList", "AdvanceUI")" class="nav-link" data-key="t-nestable-list">Nestable List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+    <div class="sidebar-background"></div>
+</div>
+<!-- Left Sidebar End -->
+<!-- Vertical Overlay-->
+<div class="vertical-overlay"></div>

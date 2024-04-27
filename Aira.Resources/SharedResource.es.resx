@@ -117,16 +117,82 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ADMIN" xml:space="preserve">
+    <value>Administradora</value>
+  </data>
+  <data name="ADMIN_SETTINGS" xml:space="preserve">
+    <value>Configuración de administrador</value>
+  </data>
+  <data name="ALERT_SUCCESS_DELETE" xml:space="preserve">
+    <value>El registro ha sido eliminado exitosamente !</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="ALERT_SUCCESS_INSERT" xml:space="preserve">
+    <value>El registro se ha agregado exitosamente !</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="ALERT_SUCCESS_UPDATE" xml:space="preserve">
+    <value>El registro se ha actualizado correctamente !</value>
+    <comment>Alert</comment>
+  </data>
   <data name="APPLICATION_TITLE" xml:space="preserve">
     <value>AIRA</value>
+  </data>
+  <data name="AUDITS" xml:space="preserve">
+    <value>Auditorías</value>
+  </data>
+  <data name="CLOSE" xml:space="preserve">
+    <value>Cerca</value>
   </data>
   <data name="CODE" xml:space="preserve">
     <value>Código</value>
   </data>
+  <data name="DASHBOARDS" xml:space="preserve">
+    <value>Paneles de control</value>
+  </data>
+  <data name="DESIGNED_DEVELOPED" xml:space="preserve">
+    <value>Diseñada y desarrollada por AIRA</value>
+  </data>
+  <data name="FORGOT_PASSWORD" xml:space="preserve">
+    <value>Has olvidado tu contraseña?</value>
+  </data>
   <data name="LANGUAGE" xml:space="preserve">
     <value>Idioma</value>
   </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="LOOKUP_DATA" xml:space="preserve">
+    <value>Datos de búsqueda</value>
+  </data>
   <data name="NAME" xml:space="preserve">
     <value>Nombre</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="REMEMBER_ME" xml:space="preserve">
+    <value>Acuérdate de mí?</value>
+  </data>
+  <data name="REPORTS" xml:space="preserve">
+    <value>Informes</value>
+  </data>
+  <data name="SIGN_IN" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="SIGN_IN_CONTINUE" xml:space="preserve">
+    <value>Inicia sesión para continuar con AIRA.</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Entregar</value>
+  </data>
+  <data name="USER_NAME" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="VALIDATION_FIELD_REQUIRED" xml:space="preserve">
+    <value>Este campo es obligatorio !</value>
+  </data>
+  <data name="WELCOME_BACK" xml:space="preserve">
+    <value>Bienvenido de nuevo !</value>
   </data>
 </root>
